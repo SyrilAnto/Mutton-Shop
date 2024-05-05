@@ -28,3 +28,22 @@ orderNowButton.addEventListener('click', () => {
     alert(`Your cart items:\n\n${cartItemsHTML}\n\nTotal: Rs.${cartTotal.toFixed(2)}`);
   }
 });
+
+const popupTrigger = document.querySelector('.popup-trigger');
+const popupOverlay = document.querySelector('.popup-overlay');
+const popupClose = document.querySelector('.popup-close');
+
+popupTrigger.addEventListener('click', () => {
+  popupOverlay.style.display = 'block';
+});
+
+popupClose.addEventListener('click', () => {
+  popupOverlay.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == popupOverlay) {
+    popupOverlay.style.display = 'none';
+  }
+});
+
