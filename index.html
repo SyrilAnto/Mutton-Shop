@@ -1,9 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutton Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="color:red">
-<div>
-Welcome to Yuvaraj's Mutton Shop
-</div>
+<body>
+  <header>
+    <h1>Yuvaraj's Mutton Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Delicious Mutton Curry</h2>
+      <p>Discover the best mutton in town at our shop.</p>
+      <button>Order Now</button>
+    </section>
+
+    <section class="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="item">
+          <img src="mutton-curry.jpg" alt="Mutton Curry">
+          <h3><p>Mutton Curry - 1 Kg</p></h3>
+          <p class="price">Rs.900</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+	<div class="item">
+          <img src="suvaroti.jpg" alt="Mutton Curry">
+          <h3><p>Mutton Suvaroti - 1 Pcs</p></h3>
+          <p class="price">Rs.120</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+	<div class="item">
+          <img src="trotters.jpg" alt="Mutton Curry">
+          <h3><p>Mutton Trotters - 4 Pcs</p></h3>
+          <p class="price">Rs.200</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more menu items here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mutton Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
